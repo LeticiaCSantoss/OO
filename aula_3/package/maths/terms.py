@@ -1,21 +1,3 @@
-class Reta():
-
-
-    def __init__(self,a,b):
-
-        self.a = a
-        self.b = b
-
-
-    def interpolar(self,x):
-
-        y = self.a * x + self.b
-        return y
-
-    
-    def model(self):
-
-        print(f'Os parâmertros do meu modelo de reta são: a={self.a}, b={self.b}')
 
 class Reta():
     def __init__(self, a, b):
@@ -43,7 +25,6 @@ class Reta():
 
 
 import math
-
 class Circle():
     def __init__(self, r, xo=0, yo=0):
         self.r = r
