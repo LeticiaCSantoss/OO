@@ -43,3 +43,22 @@ class Circle():
     def model(self):
         print(f'Os parâmetros do meu modelo de círculo são: c={self.circunferencia()}, e={self.area()}, r={self.r}')
 
+    class Point:
+    def __init__(self, xa, xb, ya, yb):
+        self.xa = xa
+        self.xb = xb
+        self.ya = ya
+        self.yb = yb
+
+    def distancia_entre_pontos(self):
+        return math.sqrt((self.xb - self.xa) ** 2 + (self.yb - self.ya) ** 2)
+
+    def distancia_entre_ponto_e_origem(self):
+        return math.sqrt(self.xa ** 2 + self.ya ** 2)
+
+    def model(self):
+        print(f'Os parâmetros do meu modelo ponto são: o={self.distancia_entre_ponto_e_origem()}, d={self.distancia_entre_pontos()}')
+
+
+
+
